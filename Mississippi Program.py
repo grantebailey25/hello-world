@@ -1,36 +1,38 @@
+#Function for repeating lines
+def repeatLines(line, count):
+    for i in range (0, count):
+        print(line)
 #Creating a function for the letter M
 def m():
     print('M     M')
     print('MM   MM')
     print('M M M M')
     print('M  M  M')
-    for i in range(0, 3):
-        print('M     M\n')
+    repeatLines('M     M\n', 3)
 #Creating a function for the letter I
 def i():
-    print('IIIII')
+    i5 = 'I' * 5
+    print(i5)
     i = 0
-    while i < 5:
-        print('  I  ')
-        i += 1
-    print('IIIII\n')
+    repeatLines('  I  ', 5)
+    print(i5 + '\n')
 #Creating a function for the letter S
 def s():
-    print(' SSSSS')
+    s5 = ' ' + 'S' * 5
+    print(s5)
     print('S     S')
     print('S')
-    print(' SSSSS')
-    print('      s')
+    print(s5)
+    print('      S')
     print('S     S')
-    print(' SSSSS\n')
+    print(s5 + '\n')
 #Creating a function for the letter P
 def p():
-    print('PPPPPP')
-    for i in range (0, 2):
-        print('P     P')
-    print('PPPPPP')
-    for i in range (0, 3) :
-        print('P')
+    p6 = 'P' * 6
+    print(p6)
+    repeatLines('P     P', 2)
+    print(p6)
+    repeatLines('P', 3)
     print()
 #Printing the letters
 m()
