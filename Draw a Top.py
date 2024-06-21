@@ -4,31 +4,17 @@ for i in range (0, SIZE):
     print(' ' * (SIZE - 1), end = '')
     print('||')
 for i in range (0, SIZE):
-    for j in range (0, SIZE - 1 - i):
-        print(' ', end = '')
-        j += 1
-    for j in range (0, i):
-        print('*', end = '')
-        j += 1
+    print(' ' * (SIZE - 1 - i), end = '')
+    print('*' * i, end = '')
     print('||', end = '')
-    for j in range (0, i):
-        print('*', end = '')
-        j += 1
-    print()
+    print('*' * i)
     i += 1
 print('=' * SIZE * 2)
 for i in range (0, SIZE):
-    for j in range (0, i):
-        print(' ', end = '')
-        j += 1
-    for j in range (0, SIZE - 1 - i):
-        print('*', end = '')
-        j += 1
+    print(' ' * i, end = '')
+    print('*' * (SIZE - 1 - i), end = '')
     print('||', end = '')
-    for j in range (0, SIZE - 1 - i):
-        print('*', end = '')
-        j += 1
-    print()
+    print('*' * (SIZE - 1 - i))
     i += 1
 for i in range (0, SIZE * 2):
     print(' ' * (SIZE - 1), end = '')
