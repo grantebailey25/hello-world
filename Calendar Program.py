@@ -1,6 +1,10 @@
 def printHeader():
-    print('  Sun    Mon    Tue    Wed    Thu    Fri    Sat')
-    for _ in range (0, 7):
+    weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    print('  ', end = '')
+    for i in range (len(weekdays)):
+        print(weekdays[i] + (' ' * 4), end = '')
+    print()
+    for _ in range (7):
         print('+' + ('-' * 6), end = '')
     print('+')
 def firstWeek(dayCount):
